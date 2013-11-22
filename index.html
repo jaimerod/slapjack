@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script data-main="js/main" src="js/require.js"></script>
+	<style>
+		.card {
+			width: 70px;
+			height: 100px;
+			border: 1px solid #000;
+			position: relative;
+		}
+		.topLeft, .bottomRight {
+			position: absolute;
+			margin: 0;
+		}
+		.topLeft {
+			top: 0;
+			left: 0;
+		}
+		.bottomRight {
+			bottom: 0;
+			right: 0;
+		}
+		.log {
+			position:absolute;
+			top: 0;
+			right: 0;
+			overflow: scroll;
+			height: 100%;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Slapjack</h1>
+			<ul>
+				<li class="currentRoom">Room: <span>In the lobby</span></li>
+				<li class="currentPlayers">Players: <span>0</span></li>
+				<li class="currentPoints">Points: <span>0</span></li>
+			</ul>
+		</header>
+		<aside class="log">
+			<h2>Log</h2>
+			<ul></ul>
+		</aside>
+		<h2>Room</h2>
+		<input type="text" class="room" />
+		<input type="button" class="join" value="join">
+		<input type="button" class="start" value="start">
+		<h2>Card</h2>
+		<div class="card">
+			<p class="topLeft"></p>
+			<p class="bottomRight"></p>
+		</div>
+	</div>
+</body>
+</html>
